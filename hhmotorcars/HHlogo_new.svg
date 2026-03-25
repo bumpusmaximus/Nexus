@@ -1,0 +1,17 @@
+<svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <!-- Professional HH Motorcars Logo Recreation -->
+  <g fill="white">
+    <!-- Outer Ring (Inner R: 168, Outer R: 208) -->
+    <path d="M256 48C141.1 48 48 141.1 48 256s93.1 208 208 208 208-93.1 208-208S370.9 48 256 48zm0 376c-92.8 0-168-75.2-168-168S163.2 88 256 88s168 75.2 168 168-75.2 168-168 168z"/>
+    
+    <!-- Central Horizontal Bar (at y=256-16=240, height 32) -->
+    <rect x="88" y="240" width="336" height="32"/>
+    
+    <!-- Left Vertical Pillar (at x=256-66-32=158) -->
+    <rect x="174" y="88" width="32" height="336"/>
+    
+    <!-- Right Vertical Pillar (at x=256+66=322) -->
+    <rect x="306" y="88" width="32" height="336"/>
+  </g>
+</svg>
+

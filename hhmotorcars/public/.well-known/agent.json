@@ -1,0 +1,44 @@
+{
+  "version": "1.1",
+  "agent_type": "local_business",
+  "schema_type": "AutoRepair",
+  "agent": {
+    "name": "HH Motorcars",
+    "description": "Specialists in classic air-cooled Porsche sales, service, and Concours-level restoration in Cincinnati, Ohio.",
+    "languages": ["en"],
+    "capabilities": [
+      "Answer questions about classic Porsche sales and inventory",
+      "Explain Concours-level restoration services",
+      "Provide information on air-cooled Porsche service and maintenance",
+      "Direct users to view currently available classic Porsches",
+      "Help schedule service or a restoration consultation"
+    ],
+    "intent_map": {
+      "view_inventory": "https://www.hhmotorcars.com/for-sale",
+      "schedule_service": "https://www.hhmotorcars.com/service",
+      "view_restoration": "https://www.hhmotorcars.com/restoration",
+      "contact": "https://www.hhmotorcars.com/contact"
+    },
+    "contact": {
+      "website": "https://www.hhmotorcars.com",
+      "contact_url": "https://www.hhmotorcars.com/contact"
+    },
+    "location": {
+      "city": "Cincinnati",
+      "state": "OH",
+      "country": "US"
+    },
+    "service_area": {
+      "primary": "Cincinnati, OH metro area",
+      "regions": ["National", "Global (for classic Porsche sales)"]
+    },
+    "specialties": [
+      "air-cooled Porsche",
+      "classic Porsche sales",
+      "Porsche 356",
+      "Porsche 911",
+      "Concours restoration",
+      "engine rebuilds"
+    ]
+  }
+}

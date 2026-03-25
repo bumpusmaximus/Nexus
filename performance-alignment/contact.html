@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact - Performance Alignment</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Oswald:ital,wght@0,400;0,700;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/lovable_style.css">
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar awesome-glass-nav scrolled" id="navbar">
+      <div class="nav-container">
+        <a href="/" class="logo-link">
+          <img src="/logo.png" alt="Performance Alignment Logo" class="brand-logo" />
+        </a>
+        <ul class="nav-links">
+          <li><a href="/services.html">Services</a></li>
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+        </ul>
+        <a href="/contact.html" class="btn-primary">BOOK NOW</a>
+      </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header contact-header">
+      <div class="container text-center">
+        <h1 class="page-title">GET IN <span class="accent">TOUCH</span></h1>
+      </div>
+    </header>
+
+    <!-- Contact Grid -->
+    <section class="section-padding content-section">
+      <div class="container grid-2-col" style="align-items: start;">
+        
+        <!-- Contact Info & Map -->
+        <div class="contact-info">
+          <div class="content-block mb-4">
+            <h2>Call Us</h2>
+            <p>Give us a call during business hours (M-F 8a-6p) for service scheduling and consultation.</p>
+            <a href="tel:+15134898500" class="font-inter font-bold hover:text-gold transition-colors">(513) 489-8500</a>
+          </div>
+          
+          <div class="content-block mt-4 mb-4">
+            <h2>Visit Us</h2>
+            <p>11359 Mosteller Rd,<br>Sharonville, OH 45241</p>
+            <p class="text-muted mt-2">Stop in and see us during business hours for service.</p>
+          </div>
+
+          <div class="map-container mt-4">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3092.155353160495!2d-84.42846962386477!3d39.27838187163351!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8840502eeb4db789%3A0x6b4afc3be7cacfbe!2s11359%20Mosteller%20Rd%2C%20Cincinnati%2C%20OH%2045241!5e0!3m2!1sen!2sus!4v1711000000000!5m2!1sen!2sus" width="100%" height="300" style="border:0; border-radius: 12px; filter: invert(90%) hue-rotate(180deg);" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form-container glass-card">
+          <h3 style="margin-bottom: 1.5rem; font-size: 1.5rem; color: var(--accent-gold);">REQUEST AN APPOINTMENT</h3>
+          <form class="contact-form">
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="name" required class="form-input" placeholder="John Doe">
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" required class="form-input" placeholder="(513) 489-8500">
+            </div>
+            <div class="form-group">
+              <label for="vehicle">Vehicle Make & Model</label>
+              <input type="text" id="vehicle" name="vehicle" required class="form-input" placeholder="e.g. 2018 Porsche GT3 RS">
+            </div>
+            <div class="form-group">
+              <label for="service">Requested Service</label>
+              <select id="service" name="service" class="form-input">
+                <option value="alignment">Precision Alignment</option>
+                <option value="track-prep">Race Car / Track Prep</option>
+                <option value="suspension">Suspension & Brakes</option>
+                <option value="tires">Tires & Balancing</option>
+                <option value="other">Other / Consultation</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Additional Details</label>
+              <textarea id="message" name="message" rows="4" class="form-input" placeholder="Please describe your setup or issues..."></textarea>
+            </div>
+            <button type="submit" class="btn-primary w-100" style="width: 100%; text-align: center; margin-top: 1rem;">SUBMIT REQUEST</button>
+          </form>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer section-padding">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <img src="/logo.png" alt="Performance Alignment Logo" class="footer-logo" />
+          <p class="mt-4 text-muted">Relentless Pursuit of Traction.</p>
+        </div>
+        <div class="footer-contact">
+          <h4 class="footer-heading">LOCATION</h4>
+          <p class="text-muted">11359 Mosteller Rd<br>Sharonville, OH 45241</p>
+        </div>
+        <div class="footer-hours">
+          <h4 class="footer-heading">HOURS</h4>
+          <p class="text-muted">Mon - Fri: 8:00 AM - 6:00 PM<br>Sat - Sun: Track Days</p>
+        </div>
+      </div>
+      <div class="footer-bottom container">
+        <p>&copy; 2026 Performance Alignment. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,106 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Porsche Heritage Dark: Charcoal & Guards Red */
+    --background: 0 0% 7%;      /* #121212 Dark Charcoal */
+    --foreground: 0 0% 98%;     /* #FAFAFA Off-White */
+    
+    --card: 0 0% 10%;           /* #1A1A1A Slightly lighter charcoal */
+    --card-foreground: 0 0% 98%;
+    
+    --popover: 0 0% 10%;
+    --popover-foreground: 0 0% 98%;
+    
+    --primary: 352 100% 42%;    /* #D5001C Guards Red */
+    --primary-foreground: 0 0% 100%;
+    
+    --secondary: 0 0% 15%;
+    --secondary-foreground: 0 0% 98%;
+    
+    --accent: 352 100% 42%;     /* Guards Red */
+    --accent-foreground: 0 0% 100%;
+    
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+    
+    --border: 0 0% 18%;
+    --input: 0 0% 18%;
+    --ring: 352 100% 42%;
+    
+    --radius: 0rem;
+    --hero-overlay-start: rgba(18, 18, 18, 0);
+    --hero-overlay-mid: rgba(18, 18, 18, 0.4);
+    --hero-overlay-end: rgba(18, 18, 18, 1);
+  }
+
+  .light {
+    /* Sand Beige & Guards Red */
+    --background: 37 23% 80%;   /* #D9D0C1 Sand Beige */
+    --foreground: 0 0% 10%;     /* #1A1A1A Dark Charcoal */
+    
+    --card: 40 25% 85%;
+    --card-foreground: 0 0% 10%;
+    
+    --popover: 40 25% 85%;
+    --popover-foreground: 0 0% 10%;
+    
+    --primary: 352 100% 42%;    
+    --primary-foreground: 0 0% 100%;
+    
+    --secondary: 40 30% 90%;
+    --secondary-foreground: 0 0% 10%;
+    
+    --accent: 352 100% 42%;
+    --accent-foreground: 0 0% 100%;
+    
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+    
+    --border: 0 0% 70%;
+    --input: 0 0% 80%;
+    --ring: 352 100% 42%;
+
+    --hero-overlay-start: rgba(217, 208, 193, 0);
+    --hero-overlay-mid: rgba(217, 208, 193, 0.4);
+    --hero-overlay-end: rgba(217, 208, 193, 1);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border transition-colors duration-500;
+  }
+  body {
+    @apply bg-background text-foreground font-sans antialiased transition-colors duration-500;
+    letter-spacing: 0.01em;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display font-light tracking-tight;
+  }
+}
+
+@layer components {
+  .glass {
+    @apply bg-foreground/5 backdrop-blur-xl border border-foreground/10 shadow-[0_8px_32px_rgba(0,0,0,0.5)];
+  }
+
+  .text-luxury {
+    @apply tracking-[0.5em] uppercase text-[10px] font-semibold text-primary;
+  }
+
+  .hero-gradient {
+    background: linear-gradient(to bottom, 
+      var(--hero-overlay-start) 0%, 
+      var(--hero-overlay-mid) 50%, 
+      var(--hero-overlay-mid) 85%,
+      var(--hero-overlay-end) 100%
+    );
+  }
+
+  .button-singer {
+    @apply px-10 py-4 border border-primary/40 hover:border-primary hover:bg-primary/10 text-foreground transition-all duration-500 text-[10px] tracking-[0.4em] uppercase font-semibold bg-foreground/5 shadow-[0_4px_12px_rgba(0,0,0,0.5)] hover:shadow-[0_0_20px_rgba(213,0,28,0.4)];
+  }
+}

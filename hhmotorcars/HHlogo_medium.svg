@@ -1,0 +1,8 @@
+<svg viewBox="0 0 400 500" fill="none" xmlns="http://www.w3.org/2000/svg" width="400" height="500">
+  <circle cx="200" cy="200" r="155" stroke="black" stroke-width="3"/>
+  <line x1="167" y1="85" x2="167" y2="315" stroke="black" stroke-width="3"/>
+  <line x1="233" y1="85" x2="233" y2="315" stroke="black" stroke-width="3"/>
+  <line x1="45" y1="200" x2="167" y2="200" stroke="black" stroke-width="3"/>
+  <line x1="233" y1="200" x2="355" y2="200" stroke="black" stroke-width="3"/>
+  <text x="200" y="446" text-anchor="middle" font-family="Arial, sans-serif" font-weight="400" font-size="34" letter-spacing="3" fill="black">motorcars</text>
+</svg>

@@ -1,0 +1,67 @@
+{
+  "version": "1.1",
+  "agent_type": "local_business",
+  "schema_type": "AutoRepair",
+  "agent": {
+    "name": "Performance Alignment Cincinnati",
+    "description": "Cincinnati's premier performance alignment and suspension shop, specializing in track alignments, corner weight balancing, ADAS calibration, and exotic/race vehicle setup. Located in Sharonville, OH.",
+    "languages": ["en"],
+    "capabilities": [
+      "Answer questions about alignment pricing and service types",
+      "Explain the difference between street and track alignments",
+      "Provide information on corner weight balancing services",
+      "Answer questions about ADAS calibration",
+      "Answer questions about coilover and suspension tuning brands supported",
+      "Direct users to book an appointment",
+      "Provide contact information and business hours"
+    ],
+    "intent_map": {
+      "book_appointment": "https://performancealignment.com/booking",
+      "view_services": "https://performancealignment.com/services",
+      "get_pricing": "https://performancealignment.com/services",
+      "contact": "https://performancealignment.com/contact",
+      "call": "tel:+15134898500"
+    },
+    "contact": {
+      "email": "info@performancealignment.com",
+      "phone": "+1-513-489-8500",
+      "phone_url": "tel:+15134898500",
+      "booking_url": "https://performancealignment.com/booking"
+    },
+    "location": {
+      "address": "11359 Mosteller Rd",
+      "city": "Sharonville",
+      "state": "OH",
+      "postal_code": "45241",
+      "country": "US",
+      "geo": {
+        "latitude": 39.2878,
+        "longitude": -84.4133
+      }
+    },
+    "service_area": {
+      "primary": "Cincinnati, OH metro area",
+      "regions": ["Hamilton County OH", "Warren County OH", "Clermont County OH", "Northern Kentucky", "Dayton OH area"]
+    },
+    "hours": {
+      "monday": "08:00-18:00",
+      "tuesday": "08:00-18:00",
+      "wednesday": "08:00-18:00",
+      "thursday": "08:00-18:00",
+      "friday": "08:00-18:00",
+      "saturday": "09:00-16:00",
+      "sunday": "closed"
+    },
+    "specialties": [
+      "track alignments",
+      "corner weight balancing",
+      "ADAS calibration",
+      "exotic vehicle alignment",
+      "coilover tuning",
+      "race car suspension setup",
+      "Porsche alignment",
+      "Ferrari alignment",
+      "McLaren alignment"
+    ]
+  }
+}

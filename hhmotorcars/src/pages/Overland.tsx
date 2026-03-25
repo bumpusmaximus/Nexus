@@ -1,0 +1,35 @@
+import React from 'react';
+import { Layout } from '../components/Layout';
+
+const Overland = () => {
+    return (
+        <Layout>
+            <section className="pt-40 pb-20 px-8 md:px-20 text-center space-y-4">
+                <span className="text-[11px] tracking-[0.4em] uppercase text-foreground/40 font-light">Adventure</span>
+                <h1 className="text-4xl md:text-6xl font-display font-light uppercase">Overland</h1>
+            </section>
+
+            <section className="py-20 px-8 md:px-20 max-w-7xl mx-auto space-y-24">
+                <div className="relative aspect-video overflow-hidden">
+                    <img 
+                      src="/HHGrnSafari.jpg" 
+                      alt="Overland Safari" 
+                      className="w-full h-full object-cover"
+                    />
+                    <div className="absolute inset-0 bg-black/30" />
+                </div>
+                
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-20">
+                    <div className="space-y-6">
+                        <h2 className="text-3xl font-display font-light">Rugged Engineering, Refined Execution</h2>
+                        <p className="text-foreground/60 font-light leading-relaxed">
+                            Our Overland builds take the legendary go-anywhere capability of the classic 911 Safari and refine it for the modern adventurer. We combine rugged off-road components with the same meticulous craftsmanship as our street restoration projects.
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </Layout>
+    );
+};
+
+export default Overland;
