@@ -1,0 +1,8 @@
+{
+  "task_id": "20260325-025252-final-relay-test",
+  "nonce": "d7e1f4b2",
+  "timestamp": "2026-03-25T02:52:52-04:00",
+  "is_fresh": true,
+  "priority": "high",
+  "action": "Append the number 6 to the count.txt file and then call notify_task_complete on the nexus-bridge."
+}

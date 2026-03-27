@@ -35,6 +35,10 @@ export const Layout = ({ children }: { children: React.ReactNode }) => {
                         <a href="https://www.instagram.com/hhmotorcars/" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">Instagram</a>
                         <a href="https://www.facebook.com/hhmotorcarsllc/" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">Facebook</a>
                     </div>
+                    <div className="flex gap-6 text-[9px] tracking-[0.2em] uppercase text-foreground/30 mt-2">
+                        <a href="/privacy" className="hover:text-foreground/60 transition-colors">Privacy</a>
+                        <a href="/terms" className="hover:text-foreground/60 transition-colors">Terms</a>
+                    </div>
                     <p className="text-[9px] tracking-widest text-foreground/20 uppercase mt-4">© {new Date().getFullYear()} HH Motorcars. All Rights Reserved.</p>
                 </div>
             </footer>

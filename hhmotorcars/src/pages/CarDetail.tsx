@@ -7,7 +7,7 @@ const inventory = {
     "2016-porsche-gt4-cayman": {
         name: "2016 Porsche GT4 Cayman",
         price: "$99,990",
-        img: "https://images.squarespace-cdn.com/content/v1/59efb2d9fe54ef0b9ad57bf6/1703598860626-YFBRYFIAB8TJSVMYXXAW/2016-Porsche-Cayman-GT4-front-three-quarter-in-motion1.png",
+        img: "/assets/images/2016-gt4-front.png",
         status: "Available",
         year: "2016",
         mileage: "Please Inquire",
@@ -15,14 +15,14 @@ const inventory = {
         transmission: "6-Speed Manual",
         description: "An exceptional example of Porsche's legendary GT department creation. The GT4 brings the 3.8L engine from the Carrera S and pairs it with the front suspension of the GT3, creating one of the most balanced and engaging sports cars of the modern era.",
         gallery: [
-            "https://images.squarespace-cdn.com/content/v1/59efb2d9fe54ef0b9ad57bf6/1703598639360-2TFVGYMQBX4P92VVTFII/2016-porsche-cayman-gt4-gear-shifter-carbuzz-576477-1600.jpg?format=1500w",
-            "https://images.squarespace-cdn.com/content/v1/59efb2d9fe54ef0b9ad57bf6/1703598627414-U6JFZ3JAR856NNZTAYQ9/2016-Porsche-Cayman-GT4-front-three-quarter-in-motion1.jpg?format=1500w"
+            "/assets/images/2016-gt4-shifter.jpg",
+            "/assets/images/2016-gt4-motion.jpg"
         ]
     },
     "2015-porsche-cayenne-turbo": {
         name: "2015 Porsche Cayenne Turbo",
         price: "$54,695",
-        img: "https://images.squarespace-cdn.com/content/v1/59efb2d9fe54ef0b9ad57bf6/1702929334283-5UWS9YQFDSUJ3E7XAV62/Image+1.jpg",
+        img: "/assets/images/cayenne-turbo-1.jpg",
         status: "Available",
         year: "2015",
         mileage: "Please Inquire",
@@ -30,15 +30,15 @@ const inventory = {
         transmission: "8-Speed Tiptronic",
         description: "Incredible combination of performance and luxury. The Cayenne Turbo produces over 500 horsepower, delivering staggering acceleration wrapped in a refined, highly capable chassis.",
         gallery: [
-            "https://images.squarespace-cdn.com/content/v1/59efb2d9fe54ef0b9ad57bf6/1702929128566-8RGRSEK1MFZR16OOC4ZL/20231129120333-92077dd7-57a0-4304-b73b-4044bfda2ec0.jpg?format=1500w",
-            "https://images.squarespace-cdn.com/content/v1/59efb2d9fe54ef0b9ad57bf6/1702929125566-Z7IJID3PTPJ0K80AD9VV/Image+7.jpg?format=1500w",
-            "https://images.squarespace-cdn.com/content/v1/59efb2d9fe54ef0b9ad57bf6/1702929125993-RD5HVMFDORP01AT04LU0/Image+6.jpg?format=1500w"
+            "/assets/images/cayenne-turbo-2.jpg",
+            "/assets/images/cayenne-turbo-7.jpg",
+            "/assets/images/cayenne-turbo-6.jpg"
         ]
     },
     "1970-porsche-914-6": {
         name: "1970 Porsche 914-6",
         price: "$95,000",
-        img: "https://images.squarespace-cdn.com/content/v1/59efb2d9fe54ef0b9ad57bf6/1572628131705-RMCAYRODK30V784SP009/20180206_092007.jpg?format=1000w",
+        img: "/assets/images/914-6-front.jpg",
         status: "Available",
         year: "1970",
         mileage: "Please Inquire",
@@ -46,8 +46,8 @@ const inventory = {
         transmission: "5-Speed Manual",
         description: "A rare and highly sought-after 914-6. Moving away from the typical 4-cylinder, this is an original flat-six mid-engine sports car that offers an unmatched, pure analog driving experience.",
         gallery: [
-            "https://images.squarespace-cdn.com/content/v1/59efb2d9fe54ef0b9ad57bf6/1572628129434-W75TIYVPJR0961ZWR8MQ/20180205_225843.jpg?format=1500w",
-            "https://images.squarespace-cdn.com/content/v1/59efb2d9fe54ef0b9ad57bf6/1572628120237-896SS8KFQOFQMNR3DLKY/20170918_104646.jpg?format=1500w"
+            "/assets/images/914-6-engine.jpg",
+            "/assets/images/914-6-interior.jpg"
         ]
     }
 };

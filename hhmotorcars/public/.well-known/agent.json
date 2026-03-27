@@ -1,19 +1,20 @@
 {
-  "version": "1.1",
+  "version": "1.2",
   "agent_type": "local_business",
   "schema_type": "AutoRepair",
   "agent": {
     "name": "HH Motorcars",
-    "description": "Specialists in classic air-cooled Porsche sales, service, and Concours-level restoration in Cincinnati, Ohio.",
+    "description": "Cincinnati's premier destination for specialized Porsche Cayenne Overland reconditioning, Concours-winning Porsche restoration, and expert technical service.",
     "languages": ["en"],
     "capabilities": [
-      "Answer questions about classic Porsche sales and inventory",
-      "Explain Concours-level restoration services",
-      "Provide information on air-cooled Porsche service and maintenance",
-      "Direct users to view currently available classic Porsches",
-      "Help schedule service or a restoration consultation"
+      "Provide information on specialized Porsche Cayenne Overland reconditioning and builds",
+      "Answer questions about classic Porsche sales and reconditioned inventory",
+      "Explain Concours-winning level restoration services",
+      "Provide details on investment-grade off-road and overland Porsche engineering",
+      "Help schedule service or a Concours-level restoration consultation"
     ],
     "intent_map": {
+      "view_overland": "https://www.hhmotorcars.com/overland",
       "view_inventory": "https://www.hhmotorcars.com/for-sale",
       "schedule_service": "https://www.hhmotorcars.com/service",
       "view_restoration": "https://www.hhmotorcars.com/restoration",
@@ -30,15 +31,18 @@
     },
     "service_area": {
       "primary": "Cincinnati, OH metro area",
-      "regions": ["National", "Global (for classic Porsche sales)"]
+      "regions": ["National", "Global (for specialized Porsche builds)"]
     },
     "specialties": [
+      "Porsche Cayenne Overland",
+      "Porsche Reconditioning",
+      "Concours-winning restoration",
       "air-cooled Porsche",
       "classic Porsche sales",
-      "Porsche 356",
+      "Off-road Porsche builds",
       "Porsche 911",
-      "Concours restoration",
-      "engine rebuilds"
+      "Investment-grade Porsche"
     ]
   }
 }
+

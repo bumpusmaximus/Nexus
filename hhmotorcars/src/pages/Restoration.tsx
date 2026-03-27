@@ -39,14 +39,14 @@ const Restoration = () => {
                     <div className="space-y-8">
                         <div className="aspect-[4/5] overflow-hidden">
                              <img 
-                                src="https://images.squarespace-cdn.com/content/v1/59efb2d9fe54ef0b9ad57bf6/1514403499606-YFQM3QMLA5VPJ9MXY5L9/20171213_161240.jpg" 
+                                src="/assets/images/restoration-bare-metal.jpg" 
                                 alt="Bare Metal Restoration" 
                                 className="w-full h-full object-cover"
                             />
                         </div>
                         <div className="aspect-video overflow-hidden">
                              <img 
-                                src="https://images.squarespace-cdn.com/content/v1/59efb2d9fe54ef0b9ad57bf6/252b3531-273d-4e98-8ef4-335bddb5ec3d/IMG_6923.jpeg" 
+                                src="/assets/images/workshop-overview.jpeg" 
                                 alt="Workshop Overview" 
                                 className="w-full h-full object-cover"
                             />

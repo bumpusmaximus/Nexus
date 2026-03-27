@@ -30,6 +30,9 @@
     --input: 0 0% 18%;
     --ring: 352 100% 42%;
     
+    --slate-grey: 200 4% 41%;   /* Porsche Slate Grey */
+    --navbar-text: 0 0% 100% / 0.4; /* Default dark mode navbar text */
+    
     --radius: 0rem;
     --hero-overlay-start: rgba(18, 18, 18, 0);
     --hero-overlay-mid: rgba(18, 18, 18, 0.4);
@@ -62,6 +65,8 @@
     --border: 0 0% 70%;
     --input: 0 0% 80%;
     --ring: 352 100% 42%;
+
+    --navbar-text: 200 4% 41%; /* Porsche Slate Grey for Light Mode */
 
     --hero-overlay-start: rgba(217, 208, 193, 0);
     --hero-overlay-mid: rgba(217, 208, 193, 0.4);

@@ -1,8 +1,27 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Layout } from '../components/Layout';
-import { Mail, Phone, MapPin, Instagram, Facebook } from 'lucide-react';
+import { Mail, Phone, MapPin } from 'lucide-react';
+import { useTitle } from '../hooks/useTitle';
 
 const Contact = () => {
+    useTitle('Contact & Connect');
+    const [name, setName] = useState('');
+    const [email, setEmail] = useState('');
+    const [message, setMessage] = useState('');
+
+    const handleSubmit = (e: React.FormEvent) => {
+        e.preventDefault();
+        
+        const subject = encodeURIComponent(`Contact from ${name} via HH Motorcars Site`);
+        const body = encodeURIComponent(
+            `Name: ${name}\n` +
+            `Email: ${email}\n\n` +
+            `Message:\n${message}`
+        );
+        
+        window.location.href = `mailto:hhmotorcars@gmail.com?subject=${subject}&body=${body}`;
+    };
+
     return (
         <Layout>
             <section className="pt-40 pb-20 px-8 md:px-20 text-center space-y-4">
@@ -31,20 +50,41 @@ const Contact = () => {
                     </div>
                 </div>
                 
-                <form className="space-y-8 bg-foreground/5 p-12 border border-foreground/5">
+                <form onSubmit={handleSubmit} className="space-y-8 bg-foreground/5 p-12 border border-foreground/5">
                     <div className="space-y-4">
                         <label className="text-[10px] tracking-widest uppercase text-foreground/40 font-light">Name</label>
-                        <input className="w-full bg-transparent border-b border-foreground/10 py-2 focus:border-foreground transition-colors outline-none font-light" placeholder="Jane Doe" />
+                        <input 
+                            className="w-full bg-transparent border-b border-foreground/10 py-2 focus:border-foreground transition-colors outline-none font-light" 
+                            placeholder="Jane Doe"
+                            required
+                            value={name}
+                            onChange={(e) => setName(e.target.value)}
+                        />
                     </div>
                     <div className="space-y-4">
                         <label className="text-[10px] tracking-widest uppercase text-foreground/40 font-light">Email</label>
-                        <input className="w-full bg-transparent border-b border-foreground/10 py-2 focus:border-foreground transition-colors outline-none font-light" placeholder="jane@example.com" />
+                        <input 
+                            type="email"
+                            className="w-full bg-transparent border-b border-foreground/10 py-2 focus:border-foreground transition-colors outline-none font-light" 
+                            placeholder="jane@example.com"
+                            required
+                            value={email}
+                            onChange={(e) => setEmail(e.target.value)}
+                        />
                     </div>
                     <div className="space-y-4">
                         <label className="text-[10px] tracking-widest uppercase text-foreground/40 font-light">Message</label>
-                        <textarea className="w-full bg-transparent border-b border-foreground/10 py-2 focus:border-foreground transition-colors outline-none font-light h-32" placeholder="How can we help?" />
+                        <textarea 
+                            className="w-full bg-transparent border-b border-foreground/10 py-2 focus:border-foreground transition-colors outline-none font-light h-32" 
+                            placeholder="How can we help?"
+                            required
+                            value={message}
+                            onChange={(e) => setMessage(e.target.value)}
+                        />
                     </div>
-                    <button className="w-full py-4 mt-8 border border-foreground/20 hover:bg-foreground hover:text-black transition-all text-[11px] tracking-[0.3em] uppercase font-light">Send Message</button>
+                    <button type="submit" className="w-full py-4 mt-8 border border-foreground/20 hover:bg-foreground hover:text-black transition-all text-[11px] tracking-[0.3em] uppercase font-light">
+                        Send Message
+                    </button>
                 </form>
             </section>
 
@@ -68,3 +108,4 @@ const Contact = () => {
 };
 
 export default Contact;
+

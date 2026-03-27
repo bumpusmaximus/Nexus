@@ -1,17 +1,22 @@
 import React from 'react';
 import { Layout } from '../components/Layout';
 import { Link } from 'react-router-dom';
+import { useTitle } from '../hooks/useTitle';
 
 const Index = () => {
+    useTitle('Classic Porsche Sales & Specialized Overland Builds');
+
     return (
         <Layout>
             {/* Hero Section */}
             <section className="relative h-screen w-full overflow-hidden flex flex-col items-center justify-center text-center px-4">
                 <div className="absolute inset-0 z-0">
                     <img 
-                        src="/HHGrnSafari.jpg" 
+                        src="/assets/images/HHGrnSafari.jpg" 
                         alt="HH Motorcars Safari" 
                         className="w-full h-full object-cover"
+                        // @ts-expect-error: fetchpriority is not yet in the standard React types but is supported by browsers
+                        fetchpriority="high"
                     />
                     <div className="absolute inset-0 bg-black/40 hero-gradient" />
                 </div>
@@ -51,9 +56,10 @@ const Index = () => {
                     {/* Service */}
                     <Link to="/service" className="relative aspect-video overflow-hidden group">
                         <img 
-                          src="https://images.squarespace-cdn.com/content/v1/59efb2d9fe54ef0b9ad57bf6/1570243494881-NDWUG8RCJAUXZH3JM7LI/20190910_093540.jpg?format=1500w" 
+                          src="/assets/images/workshop-service.jpg" 
                           alt="Specialized Porsche Service" 
                           className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
+                          loading="lazy"
                         />
                         <div className="absolute inset-0 bg-black/60 flex flex-col justify-end p-12 transition-opacity duration-500 opacity-90 hover:opacity-100">
                              <div className="space-y-4">
@@ -67,9 +73,10 @@ const Index = () => {
                     {/* Restoration */}
                     <Link to="/restoration" className="relative aspect-video overflow-hidden group">
                          <img 
-                          src="https://images.squarespace-cdn.com/content/v1/59efb2d9fe54ef0b9ad57bf6/1514403499606-YFQM3QMLA5VPJ9MXY5L9/20171213_161240.jpg?format=1500w" 
+                          src="/assets/images/restoration-bare-metal.jpg" 
                           alt="Concours-Level Restoration" 
                           className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
+                          loading="lazy"
                         />
                         <div className="absolute inset-0 bg-black/60 flex flex-col justify-end p-12 transition-opacity duration-500 opacity-90 hover:opacity-100">
                              <div className="space-y-4">
@@ -102,9 +109,10 @@ const Index = () => {
                 </div>
                 <div className="relative aspect-[4/5] overflow-hidden group">
                     <img 
-                      src="https://images.squarespace-cdn.com/content/v1/59efb2d9fe54ef0b9ad57bf6/52a960a2-987b-4f63-aa5d-8ed466666207/tumblr_4e981a52ea47e41f71b64f99ceec0b19_b5e9bafe_500.jpg?format=2500w" 
+                      src="/assets/images/heritage-detail.jpg" 
                       alt="Heritage Detail" 
                       className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110 grayscale brightness-90 shadow-2xl"
+                      loading="lazy"
                     />
                     <div className="absolute inset-0 bg-primary/20 mix-blend-overlay" />
                 </div>
@@ -115,9 +123,10 @@ const Index = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
                     <div className="relative aspect-video overflow-hidden order-2 md:order-1">
                         <img 
-                          src="https://images.squarespace-cdn.com/content/v1/59efb2d9fe54ef0b9ad57bf6/252b3531-273d-4e98-8ef4-335bddb5ec3d/IMG_6923.jpeg?format=1500w" 
+                          src="/assets/images/workshop-overview.jpeg" 
                           alt="Classic Porsche Workshop" 
                           className="w-full h-full object-cover transition-transform duration-1000 hover:scale-105"
+                          loading="lazy"
                         />
                         <div className="absolute inset-0 bg-primary/10 mix-blend-overlay" />
                     </div>

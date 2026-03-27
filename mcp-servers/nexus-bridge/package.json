@@ -1,0 +1,13 @@
+{
+  "name": "nexus-bridge",
+  "version": "1.0.0",
+  "description": "MCP server — bridges Antigravity to Claude Code for AgenticNexus handoffs",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0"
+  }
+}

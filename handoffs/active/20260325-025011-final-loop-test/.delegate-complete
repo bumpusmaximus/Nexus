@@ -1,0 +1,8 @@
+{
+  "task_id": "20260325-025011-final-loop-test",
+  "nonce": "f2e9a31b",
+  "timestamp": "2026-03-25T02:50:11-04:00",
+  "is_fresh": true,
+  "priority": "high",
+  "action": "Create FINAL-SUCCESS.md and call notify_task_complete. This session must be a fresh restart of Claude Code to verify tools are loaded."
+}

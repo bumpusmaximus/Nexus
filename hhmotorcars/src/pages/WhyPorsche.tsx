@@ -13,7 +13,7 @@ const WhyPorsche = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
                     <div className="aspect-square overflow-hidden order-last md:order-first">
                          <img 
-                            src="https://images.squarespace-cdn.com/content/v1/59efb2d9fe54ef0b9ad57bf6/7859213e-d914-4596-83c7-42865f8a60a7/tumblr_4aacfd3455cd48f7c9aea4fa461af7e6_df66c3bc_400.jpg" 
+                            src="/assets/images/white-front.jpg" 
                             alt="White Front" 
                             className="w-full h-full object-cover"
                         />
@@ -35,7 +35,7 @@ const WhyPorsche = () => {
                     </div>
                     <div className="aspect-square overflow-hidden">
                          <img 
-                            src="https://images.squarespace-cdn.com/content/v1/59efb2d9fe54ef0b9ad57bf6/3565ad1c-d8f3-455f-8c65-6a46b7ded856/tumblr_f8c54888587a72251f6cb043d4d5be55_b287332f_540.jpg" 
+                            src="/assets/images/orange-back.jpg" 
                             alt="Orange Back" 
                             className="w-full h-full object-cover shadow-2xl"
                         />

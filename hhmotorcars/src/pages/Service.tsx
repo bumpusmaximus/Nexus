@@ -46,7 +46,7 @@ const Service = () => {
             <section className="py-20 px-8 md:px-20 max-w-7xl mx-auto space-y-24">
                 <div className="relative aspect-[21/7] overflow-hidden">
                     <img 
-                      src="https://images.squarespace-cdn.com/content/v1/59efb2d9fe54ef0b9ad57bf6/1570243494881-NDWUG8RCJAUXZH3JM7LI/20190910_093540.jpg" 
+                      src="/assets/images/workshop-service.jpg" 
                       alt="Service" 
                       className="w-full h-full object-cover"
                     />

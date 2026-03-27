@@ -1,7 +1,10 @@
 import React from 'react';
 import { Layout } from '../components/Layout';
+import { useTitle } from '../hooks/useTitle';
 
 const About = () => {
+    useTitle('Our Story & Heritage');
+
     return (
         <Layout>
             <section className="pt-40 pb-20 px-8 md:px-20 text-center space-y-4">
@@ -12,7 +15,7 @@ const About = () => {
             <section className="py-20 px-8 md:px-20 max-w-5xl mx-auto space-y-16">
                 <div className="aspect-[21/9] overflow-hidden">
                     <img 
-                      src="https://images.squarespace-cdn.com/content/v1/59efb2d9fe54ef0b9ad57bf6/c5d53498-3327-4597-b526-f452e31274c7/hh.GermanFlag.1.jpg" 
+                      src="/assets/images/hh.GermanFlag.1.jpg" 
                       alt="Workshop" 
                       className="w-full h-full object-cover grayscale opacity-60"
                     />
